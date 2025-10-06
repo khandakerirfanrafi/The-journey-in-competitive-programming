@@ -1,18 +1,18 @@
 #include<stdio.h>
 int main(){
     int a;
-    int b;
-    scanf("%d %d", &a,&b);
+    int b;                                //2 integer number is declear a,b
+    scanf("%d %d", &a,&b);                //taking input from user
     int sum= a + b;
-    printf("Summation is=%d\n",sum);
+    printf("Summation is=%d\n",sum);      //print the summation
     int sub= a-b;
-    printf("Subtraction is=%d\n",sub);
+    printf("Subtraction is=%d\n",sub);    //print the substraction
     int mul= a*b;
-    printf("Multiplication is=%d\n",mul);
+    printf("Multiplication is=%d\n",mul); //print the multiplication
     float dib= a/b;
-    printf("Division is=%.2f\n",dib);
+    printf("Division is=%.2f\n",dib);     //print the division
     int mod= a%b;
-    printf("Modulation is=%d\n",mod);
-    return 0;
+    printf("Modulation is=%d\n",mod);     //print the modulation
+    return 0;                             //end the program
 
 }
