@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    float a, b, c;    //declear 3 numbers
+    scanf("%f %f", &a, &b); //input 2 number from user
+    char arith;  //declear a character
+    scanf(" %c", &arith);  //input a character
+    switch (arith){      //using switch case for various character
+        case '+':         //for + do summation
+            c = a + b;
+            printf("%.2f", c);  //print result
+            break;
+        case '-':        //for - do substraction
+            c = a - b;
+            printf("%.2f", c);    //print result
+            break;
+        case '*':           //for * do multiplicaion
+            c = a * b;
+            printf("%.2f", c);      //print result
+            break;
+        case '/':       //for / do division
+            c = a / b;
+            printf("%.2f", c);     //print result
+            break;
+        default:
+            printf("Invalid operator");   //print defult massage
+    }
+    return 0;
+}
