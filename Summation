@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main(){
+    int a,b,c; //declear 3 number
+    scanf("%d %d",&a,&b); //input 2 number from user
+    c=a+b;  //summation of 2 numbers
+    printf("%d",c);  //print the sum
+    return 0;
+}
