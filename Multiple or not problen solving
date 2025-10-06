@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    int a,b; //declear 2 numbers
+    scanf("%d %d",&a,&b);  //input 2 number from user
+    if((a%b)==0){ //check is it multiple or not
+        printf("Yes");
+    }
+    else{
+        printf("No");
+    }
+}
