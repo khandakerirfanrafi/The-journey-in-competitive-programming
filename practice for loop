@@ -1,0 +1,10 @@
+#include<stdio.h>                                // this is header file
+int main(){                                      // main structure
+    int N;                                      // declear an integer
+    scanf("%d",&N);                            //input from user
+    int i;                                     //declear an integer for loop
+    for(i=1; i<=N; i++ ){                      //using loop structure and this is for loop(initial statement, condition, updation)
+        printf("I Love Practice\n");           // loop body
+    }
+    return 0;                                  // end the code
+}
