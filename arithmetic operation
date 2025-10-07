@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+    float a;  
+    int b;    //declear a float number and an integer number
+    
+    scanf("%f %d", &a,&b);    //taking input 2 number from users
+    int sum= a + b;             //summation
+    printf("Summation is=%d\n",sum); //print result
+    int sub= a-b;                 //substraction
+    printf("Subtraction is=%d\n",sub);      //print result
+    int mul= a*b;                    // multiplication
+    printf("Multiplication is=%d\n",mul);      //print result
+    float dib= a/b;                    //division
+    printf("Division is=%f\n",dib);         //print result
+    int mod= ((int)a)%b;           //modulu
+    printf("Modulation is=%d\n",mod);           //print result
+    return 0;
+
+}
