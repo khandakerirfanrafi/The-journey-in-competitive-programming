@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int N,i;   //declear 2 integer veriable
+    scanf("%d",&N);  //taking input from user
+    for(i=1;i<=N;i++){  //make a loop for check N times
+        if(i%5==0){    //check the number divided by 5
+            printf("%d Yes\n",i);  //print Yes if divied by 5
+        }
+        else{
+            printf("%d No\n",i); //print No if not divied by 5
+        }
+    }
+}
