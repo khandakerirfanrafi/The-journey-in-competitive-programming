@@ -1,0 +1,11 @@
+//Write a c program to print 8’s time table to 200
+#include<stdio.h>
+int main()
+{
+    int a=0,b=8;  //declear 2 integer number
+    for(int i=8;i<=200;i+=8)  //loop
+    {
+        a=a+1;
+        printf("%d*%d=%d\n",a,b,i); //print
+    }
+}
