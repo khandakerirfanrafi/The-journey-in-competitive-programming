@@ -1,0 +1,23 @@
+// submit assignment on time or not problem solving
+#include <stdio.h>
+
+int main()
+{
+    int T;                   //declear the integer test case
+    int X;                  //declear the integer number
+    scanf("%d", &T);          //take input how time do the same work
+    for (int i = 1; i <= T; i++) //loop
+    {
+        scanf("%d", &X);     //take the number when started the assignment
+        if ((X + 3) > 10)    // check the time is greater than 10 or not
+        {
+            printf("No\n");
+        }
+        else
+        {
+            printf("Yes\n");
+        }
+    }
+
+    return 0;
+}
