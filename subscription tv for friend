@@ -1,0 +1,24 @@
+int main()
+{
+    int T;
+    int N, X;   //take integer 3 number 
+    scanf("%d", &T);  // take number of test case
+    for (int i = 1; i <= T; i++)   //loop
+    {
+        scanf(" %d %d", &N, &X);  //take number of friend and subscription price fron user
+        if (N < 6)   // if number of friend in lower than 6
+        {
+            printf("%d\n", (1 * X));
+        }
+        else if(N%6==0)   // if number of friends is devied by 6
+        {
+            printf("%d\n", (N / 6) * X);
+        }
+        else  // if number of friends is not devied by 6
+        {
+            printf("%d\n", ((N / 6)+1) * X);
+        }
+    }
+
+    return 0;
+}
