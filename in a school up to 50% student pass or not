@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int T;   //declear the integer test case
+    int X,Y,Z;   //declear the integer number of school,student and passed student
+    scanf("%d", &T);   //take input how time do the same work
+    for (int i = 1; i <= T; i++)  //loop
+    {
+        scanf("%d %d %d", &X,&Y,&Z);  //take the number of school,student and passed student
+        
+        if (((X * Y)/2) <Z)   // check the number is greater than 50% or not
+        {
+            printf("YES\n");
+        }
+        else
+        {
+            printf("NO\n");
+        }
+    }
+
+    return 0;
+}
+
+
+//problem link: ("https://www.codechef.com/practice/course/logical-problems/DIFF800/problems/EXAMCHEF")
