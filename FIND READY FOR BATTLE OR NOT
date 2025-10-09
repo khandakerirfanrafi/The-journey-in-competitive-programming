@@ -1,0 +1,33 @@
+//FIND READY FOR BATTLE OR NOT
+
+#include <stdio.h>
+int main()
+{
+    int N;        //declear the integer number of soldier 
+    int A[100];   //declear the array of soldier's arm
+    int c_odd = 0, c_even = 0;  //declear the integer variables
+    scanf("%d", &N);  //taking input the integer number of soldier
+    for (int i = 1; i <= N; i++)  //loop
+    {
+        scanf("%d", &A[i]);  //taking input the array numbers
+        if (A[i] % 2 == 0)  //check is it odd or even
+        {
+            c_even++;  //increase the number
+        }
+        else
+        {
+            c_odd++;
+        }
+    }
+    if (c_odd < c_even)  //check which is big
+    {
+        printf("READY FOR BATTLE");
+    }
+    else
+    {
+        printf("NOT READY");
+    }
+    return 0;
+}
+
+//problem link: [https://www.codechef.com/practice/course/logical-problems/DIFF800/problems/AMR15A?tab=statement]
