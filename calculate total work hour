@@ -1,0 +1,22 @@
+//calculate total work hour
+
+#include <stdio.h>
+
+int main() {
+    int T;   //declear the integer test case
+    int X,Y;  //declear the integer number
+    scanf("%d",&T);    //take input how time do the same work
+    for(int i=1;i<=T;i++){   //loop
+      scanf("%d %d",&X,&Y);  //take the number how long you work (monday to thrusday is reffer to X) and friday is reffer to Y
+      if(X>Y){                         // check the time is greater than friday or not
+        printf("%d\n",((X*4)+Y));           //print the ans
+      }
+      else{
+        printf("The value is not right.");
+      }
+    }
+    
+    return 0;
+}
+
+problem link: https://www.codechef.com/practice/course/logical-problems/DIFF800/problems/OFFICE?tab=statement
