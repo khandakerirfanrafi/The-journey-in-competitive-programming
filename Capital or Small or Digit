@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    char X;              //declear the integer test case
+    scanf("%c", &X);      //input from user
+    if(48<=X && X<=57){   // check it is digit or not by ascii value
+        printf("IS DIGIT");
+    }
+    else if(65<=X && X<=90){     // check it is Alphabet and capital latter or not by ascii value
+        printf("ALPHA\nIS CAPITAL");
+    }
+    else{
+        printf("ALPHA\nIS SMALL");  // check it is Alphabet and small latter or not by ascii value
+    }
+    
+    return 0;
+}
+
+problem link:[https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/M]
