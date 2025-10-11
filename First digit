@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int X;     //declear the integer number
+    scanf("%d", &X); //take input from user
+    X=X/1000;       //get 1st number from 4digit number
+    if(X%2==0){        //check it is even or odd
+        printf("EVEN");
+    }
+    else{
+        printf("ODD");
+    }
+    return 0;
+}
+
+
+problem link:[https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/P]
