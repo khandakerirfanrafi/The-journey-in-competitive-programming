@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+    int A,B;
+    scanf("%d %d",&A,&B);
+    if(A>=B){
+        printf("Yes");
+    }
+    else{
+        printf("No");
+    }
+}
+
+//problem link:[https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/I]
+//In this program, two integers A and B are taken as input from the user. The program then compares the two numbers using an if-else condition. If A is greater than or equal to B, it prints “Yes”. Otherwise, if A is smaller than B, it prints “No”. In short, the program checks whether the first number is greater than or equal to the second number and displays the result accordingly.
