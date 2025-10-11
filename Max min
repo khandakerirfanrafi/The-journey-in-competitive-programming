@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int A,B,C,max,min;   //declear 3 integer number
+    scanf("%d %d %d",&A,&B,&C);  //take input 3 integer from user
+    max=A;  //initialize the max number
+    if(B>max){   //check is it max
+        max=B;
+    }
+    if(C>max){  //check is it max
+        max=C;
+    }
+    min=A;    //initialize the min number
+    if(B<min){  //check is it min
+        min=B;
+    }
+    if(C<min){  //check is it min
+        min=C;
+    }
+    printf("%d %d\n",min,max);   //print the min and max number
+    return 0;
+}
+
+problem link:[https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/K]
