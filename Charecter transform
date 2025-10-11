@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    char X;           //declear the charecter 
+    scanf("%c", &X);  // input the charecter
+    if(65<=X && X<=90){  //check it is capital latter or not
+        printf("%c\n",(X+32));  //if it is capital latter then work it and print small latter
+    }
+    else{
+        printf("%c\n",(X-32));  //if it is small latter then work it and print capital latter
+    }
+    return 0;
+}
+
+problem link: [https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/N]
