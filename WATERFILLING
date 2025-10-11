@@ -1,0 +1,28 @@
+//WATERFILLING
+//Chef has three water bottles. At any point, if at least two of them are empty, she will fill them up. But if at most one bottle is empty, she will wait, and not fill them up now.
+
+#include <stdio.h>
+
+int main()
+{
+    int T;        //declear the integer test case
+    int X, Y, Z;  //declear the integer 3 bottol
+    scanf("%d", &T);  //take input how time do the same work
+    for (int i = 1; i <= T; i++)       //loop
+    {
+        scanf("%d %d %d", &X, &Y, &Z); //take the integer value of bottols
+        int C = X + Y + Z;
+        if (C < 2)  // check the number is greater than 2 or not
+        {
+            printf("Water filling time\n");
+        }
+        else
+        {
+            printf("Not now\n");
+        }
+    }
+
+    return 0;
+}
+
+problem link:[https://www.codechef.com/practice/course/logical-problems/DIFF800/problems/WATERFILLING]
