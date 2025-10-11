@@ -1,0 +1,35 @@
+#include <stdio.h>
+int main()
+{
+    int A, B;
+    scanf("%d %d", &A, &B);
+    if (A > B)
+    {
+        if (A % B == 0)
+        {
+            printf("Multiples");
+        }
+        else
+        {
+            printf("No Multiples");
+        }
+    }
+    else
+    {
+        if (B % A == 0)
+        {
+            printf("Multiples");
+        }
+        else
+        {
+            printf("No Multiples");
+        }
+    }
+    return 0;
+}
+
+
+
+//problem link:[https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/J]
+
+//In this program, two integers **A** and **B** are taken as input. The program first checks which of the two numbers is greater. If **A** is greater than **B**, it checks whether **A** is divisible by **B** using the modulo operator (`A % B == 0`). If it is divisible, it prints **“Multiples”**, otherwise it prints **“No Multiples”**. Similarly, if **B** is greater than or equal to **A**, it checks whether **B** is divisible by **A**, printing **“Multiples”** if true and **“No Multiples”** otherwise. In essence, the program determines whether one of the two numbers is a multiple of the other and outputs the result accordingly.
