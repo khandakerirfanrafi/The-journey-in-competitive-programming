@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int T;           //declear a integer number which indecates tase case
+    int X, Y;        //declear integer numbers one is coin, bill
+    scanf("%d", &T); //take input the tase case from user
+    for (int i = 1; i <= T; i++)   //loop for test case
+    {
+        scanf("%d %d", &X, &Y);   // take input coin and bill
+        int Z = ((X * Y) / 100);  
+        printf("%d\n", Z);        // print the result
+    }
+
+    return 0;
+}
+
+problem link:[https://www.codechef.com/practice/course/logical-problems/DIFF800/problems/CREDCOINS]
