@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int N;     //declear a integer number
+    scanf("%d",&N);  //take input a integer from user
+    for(int i=2;i<=N;i+=2){  //using loop structure for checking N times
+        printf("%d\n",i);    //print number
+    }
+    if(N<2){          // check is it smaller than 2 or not
+        printf("-1\n");
+    }
+    return 0;   //end the program
+}
+
+//problem link: [https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/B]
