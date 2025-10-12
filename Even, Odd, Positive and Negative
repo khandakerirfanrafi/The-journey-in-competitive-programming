@@ -1,0 +1,32 @@
+#include<stdio.h>                         // Standard input/output library include
+
+int main()
+{
+    int T,N,e=0,o=0,po=0,ne=0;            // T = total numbers, N = input number, e = even count, o = odd count, po = positive count, ne = negative count                               
+    scanf("%d",&T);                       // Taking total count of numbers (T)
+    for(int i=1;i<=T;i++){                // Loop runs T times
+        scanf("%d",&N);                   // Taking one number (N) each time
+        if(N%2==0){                       // Check if number is even
+            e++;                          // Increase even counter
+        }
+        else{                             // Otherwise number is odd
+            o++;                          // Increase odd counter
+        }
+
+        if(N>0){                          // Check if number is positive
+            po++;                         // Increase positive counter
+        }
+        else if(N<0){                     // Check if number is negative
+            ne++;                         // Increase negative counter
+        }
+        // If N == 0 → not positive or negative, so no change
+    }
+
+    printf("Even: %d\nOdd: %d\nPositive: %d\nNegative: %d",e, o, po, ne);
+                                           // Print total count of even, odd, positive, and negative numbers
+
+    return 0;                             // End of program
+}
+
+
+//problem link:[https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/C]
