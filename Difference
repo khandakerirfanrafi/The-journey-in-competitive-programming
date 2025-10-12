@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    int A,B,C,D,X;  //declear 4 integer number
+    scanf("%d %d %d %d",&A,&B,&C,&D);   //take input 4 integer from user
+    X=(A*B)-(C*D);       
+    printf("Difference  = %d",X); 
+    return 0;
+}
+
+//problem link: [https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/D]
