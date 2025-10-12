@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    int A,B;    //declear 2 integer number
+    scanf("%d %d",&A,&B);  //taking input from user
+    printf("%d + %d = %d\n",A,B,A+B);  //summation
+    printf("%d * %d = %d\n",A,B,A*B);  //multiplication
+    printf("%d - %d = %d\n",A,B,A-B);  //substraction
+    return 0;
+}
