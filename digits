@@ -1,0 +1,32 @@
+#include <stdio.h>  // Include the standard input-output header file
+
+int main()
+{
+    int T, N;  // Declare two integer variables: T for test cases, N for the number to process
+
+    scanf("%d", &T);          // Take input for the number of test cases
+    for (int i = 1; i <= T; i++)        // Loop through each test case
+    {
+        scanf("%d", &N);  // Take input for the number N
+
+        // If the number is 0, directly print 0
+        if (N == 0)
+        {
+            printf("0");
+        }
+        else
+        {
+            // Loop until N becomes 0
+            // This will print each digit of N in reverse order
+            for (; N != 0;)
+            {
+                printf("%d ", N % 10);  // Print the last digit of N
+                N /= 10;                // Remove the last digit from N
+            }
+        }
+        printf("\n");  // Move to the next line after each test case
+    }
+    return 0;  // End of program
+}
+
+//problem link:[https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/Q]
