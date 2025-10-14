@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int N;                          // Variable to store input number
+    scanf("%d", &N);                // Read value of N from user
+
+    for(int i = N; i >= 1; i--){    // Loop from N down to 1 (controls rows)
+        for(int j = i; j >= 1; j--){ // Print numbers from i down to 1
+            printf("%d ", j);       // Print current number
+        }
+        printf("\n");               // Move to next line after each row
+    }
+    return 0;                       // End of program
+}
+//problem link:[https://judge.phitron.io/topics/cm5z7wa3u0007p301xbzdqkuk/cm86d15s50092r001qeu2gb0t?submissionId=cmgqnybzk2bvsoj0117yjelmf&language=c_103]
