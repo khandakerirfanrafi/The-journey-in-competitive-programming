@@ -1,0 +1,16 @@
+#include<stdio.h>   // Standard I/O library
+
+int main()
+{
+    char C;          // Input character
+    scanf("%c", &C); // Read character
+
+    if (C == 'z')    // If char is 'z'
+        printf("a"); // Print 'a'
+    else
+        printf("%c", C + 1); // Print next character
+
+    return 0;        // End program
+}
+
+//problem link:[https://codeforces.com/group/MWSDmqGsZm/contest/326175/problem/C]
