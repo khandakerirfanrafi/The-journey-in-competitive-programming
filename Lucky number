@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main()
+{
+    int N, f, l;              // N = input number, f = first digit, l = last digit
+    scanf("%d", &N);           // Read the input number N
+
+    f = N / 10;                // Get the first digit (integer division by 10)
+    l = N % 10;                // Get the last digit (remainder when divided by 10)
+
+    // Check if either digit divides the other
+    if (l % f == 0 || f % l == 0) {
+        printf("YES");          // If divisible, print YES
+    }
+    else {
+        printf("NO");           // Otherwise, print NO
+    }
+
+    return 0;                   // End of program
+}
+//problem link:[https://codeforces.com/group/MWSDmqGsZm/contest/326175/problem/I]
