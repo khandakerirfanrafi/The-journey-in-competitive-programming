@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main()
+{
+    long long int a, b, c, d, x, y;          // Declare variables for inputs and temporary calculations
+
+    scanf("%lld %lld %lld %lld", &a, &b, &c, &d);  // Read four numbers: a, b, c, d
+
+    x = (a * (b - c));                        // Temporary calculation: a * (b - c)
+    y = a + b * c;                             // Temporary calculation: a + b * c
+
+    // Check all possible combinations of +, -, * between a, b, c
+    if ((a + b - c) == d ||                    // a + b - c
+        (a + b * c) == d ||                    // a + b * c
+        (a - b * c) == d ||                    // a - b * c
+        (a - b + c) == d ||                    // a - b + c
+        (a * b + c) == d ||                    // a * b + c
+        (a * b - c) == d)                      // a * b - c
+    {
+        printf("YES");                         // If any combination equals d, print YES
+    }
+    else
+    {
+        printf("NO");                          // Otherwise, print NO
+    }
+
+    return 0;                                  // End of program
+}
+//problrm lonk:[https://codeforces.com/group/MWSDmqGsZm/contest/326175/problem/D]
