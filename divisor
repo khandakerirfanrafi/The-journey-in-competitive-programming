@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main()
+{
+    int N;                  // Declare variable to store the input number
+    scanf("%d", &N);        // Read an integer N from the user
+
+    // Loop from 1 to N to find all divisors
+    for(int i = 1; i <= N; i++){
+        if(N % i == 0){     // If i divides N completely (no remainder)
+            printf("%d\n", i); // Print i as a divisor
+        }
+    }
+
+    return 0;               // End of program
+}
+//problem link:[https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/K]
