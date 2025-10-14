@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int N, a = 65;              // N = number of rows, a = ASCII value of 'A'
+    scanf("%d", &N);            // Read input number N
+
+    for(int i = 1; i <= N; i++){   // Loop for rows
+        for(int j = 1; j <= i; j++){ // Loop for columns in each row
+            printf("%c ", a);     // Print current alphabet (A, B, C, ...)
+        }
+        a++;                      // Move to next alphabet after each row
+        printf("\n");             // New line after each row
+    }
+    return 0;                     // End program
+}
+
+//problem link:[https://judge.phitron.io/topics/cm5z7wa3u0007p301xbzdqkuk/cm86d8btu009er001s04tfa7u?language=c_103]
