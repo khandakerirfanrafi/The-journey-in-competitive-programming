@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d", &n);             // Read the size of the array
+
+    int arr[n];                   // Declare the array
+
+    for(int i = 0; i < n; i++){
+        arr[i] = 0;               // Initialize element (optional)
+        scanf("%d", &arr[i]);     // Read element from user
+
+        if(arr[i] <= 10){         // Check if element is <= 10
+            printf("A[%d] = %d\n", i, arr[i]);  // Print the element with its index
+        }
+    }
+
+    return 0;                     // End of program
+}
+//problem link:[https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/D]
