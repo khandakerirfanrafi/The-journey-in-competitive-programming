@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+    int n;                        // Variable to store size of the array
+    scanf("%d", &n);              // Read array size
+
+    int arr[n], max = 0;  // Declare array and helper variables
+                          // max = to store maximum value
+
+    for(int i = 0; i < n; i++){
+        arr[i] = 0;                // Initialize array element (optional)
+        scanf("%d", &arr[i]);      // Read array element from user
+
+        if(max < arr[i]){          // Update max if current element is greater
+            max = arr[i];
+        }
+    }
+
+    printf("%d ", max);            // Print the maximum value in the array
+
+    return 0;                      // End of program
+}
