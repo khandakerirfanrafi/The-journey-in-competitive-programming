@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, i;                  // n = size of the array, i = loop counter
+    scanf("%d", &n);           // Read the size of the array
+
+    int arr[n];                // Declare the array
+    for (i = 0; i < n; i++)    // Loop to read array elements
+    {
+        arr[i] = 0;            // Initialize element (optional)
+        scanf("%d", &arr[i]);  // Read element from user
+    }
+    int x;
+    scanf("%d", &x);           // Read the value to search in the array
+
+    for (i = 0; i < n; i++)    // Loop to search for x
+    {
+        if (arr[i] == x)       // If x is found at index i
+        {
+            printf("%d", i);   // Print the index
+            break;             // Exit loop after finding the first occurrence
+        }
+    }
+    if (i == n)                // If loop finishes without finding x
+    {
+        printf("-1");          // Print -1
+    }
+    return 0;                  // End of program
+}
+//problem link:[https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/B]
