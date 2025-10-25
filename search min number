@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<limits.h>
+
+int main()
+{
+    int n, i, a;
+    scanf("%d", &n);             // Read number of elements
+    int arr[n], min = INT_MAX;   // Declare array and set min to max possible int value
+
+    for(i = 1; i < n; i++){      // Loop from 1 to n-1 (⚠ should start from 0)
+        arr[i] = 0;              // Initialize element (not needed here)
+        scanf("%d", &arr[i]);    // Read array element
+
+        if(min > arr[i]){        // Check if current element is smaller than current min
+            min = arr[i];        // Update minimum value
+            a = i;               // Store index of the minimum element
+        }
+    }
+
+    printf("%d %d", min, a);     // Print minimum value and its index
+    return 0;                    // End program
+}
+//problem link:[https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/E]
