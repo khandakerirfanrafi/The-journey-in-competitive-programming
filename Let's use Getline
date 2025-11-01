@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    char s[1000000]; // Declare a large character array to store the input string
+
+    // Read the full line of input (including spaces)
+    fgets(s, sizeof(s), stdin);
+
+    // Print characters one by one until '\' is found
+    for (int i = 0; s[i] != '\\'; i++) {
+        printf("%c", s[i]); // Print current character
+    }
+
+    return 0; // End of program
+}
