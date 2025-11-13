@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int star = 1;              // top part → starting stars
+    int s = (n + 10) / 2;      // starting spaces for top
+
+    if (n % 2 != 0) {          // only run when n is odd
+        
+        // ---- Top part of the tree ----
+        for (int i = 0; i < (n + 11) / 2; i++) {
+
+            for (int k = s; k > 0; k--)    // print spaces
+                printf(" ");
+
+            for (int j = 0; j < star; j++) // print stars
+                printf("*");
+
+            printf("\n");
+
+            star += 2;   // next row has 2 more stars
+            s--;         // next row has 1 less space
+        }
+
+        // ---- Trunk part (always 5 rows) ----
+        int z = 5;       // spaces before trunk
+        for (int i = 0; i < 5; i++) {
+
+            for (int k = z; k > 0; k--)    // print trunk leading spaces
+                printf(" ");
+
+            for (int j = 0; j < n; j++)    // print trunk stars
+                printf("*");
+
+            printf("\n");
+        }
+    }
+
+    return 0;
+}
+//problem link: [https://www.hackerrank.com/contests/final-exam-a-introduction-to-c-programming-a-batch-08/challenges/magical-tree-3]
