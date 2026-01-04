@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string s;
+    cin>>s;
+    vector<int> fre(26,0);
+    for(char x: s){
+        if(x>96&&x<123)
+            fre[x-'a']++;
+        else
+            return 0;
+    }
+    for(int i=0;i<=25;i++){
+        if(fre[i]>0)
+        cout<<char('a'+i)<<" "<<":"<<" "<<fre[i]<<endl;
+    }
+
+    return 0;
+}
